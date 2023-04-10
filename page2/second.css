@@ -1,0 +1,124 @@
+:root {
+    --color1: #A77C5D;
+    --color2: #F4E8DE;
+    --color3: #332317;
+    --color4: #997052;
+    --color5: #EDDACA;
+    --cat1-color: #490C97;
+    --cat2-color: #0C5497;
+    --cat3-color: #49970C;
+    --cat4-color: #970C0C;
+    --fade-cat-color: #970C0C33;
+    --additional-dark-color: #A5A5A5;
+    --additional-color: #C4C4C4;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    background-color: var(--color2);
+    height: 100vh;
+    overflow: scroll;
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+.interface {
+    height: 56px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px var(--additional-dark-color);
+}
+
+
+.interface__left {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    gap: 15px;
+
+}
+
+.interface__left-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.interface_right {
+    margin-right: 16px;
+}
+
+
+/* MAIN*/
+
+.list {
+    margin-top: 24px;
+    margin-left: 13px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 54px 104px;
+}
+
+
+dt {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+dd {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+dt::after {
+    content: ':';
+}
+
+/*FOOTER*/
+
+.footer {
+    border-top: solid 1px var(--color1);
+    padding-top: 20px;
+    justify-content: center;
+    gap: 112px;
+    display: flex;
+    margin-top: 492px;
+}
+
+.footer__left {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--additional-dark-color);
+}
+
+.footer__text_active {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: black;
+}
