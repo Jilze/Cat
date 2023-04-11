@@ -1,0 +1,74 @@
+:root {
+    --color1: #A77C5D;
+    --color2: #F4E8DE;
+    --color3: #332317;
+    --color4: #997052;
+    --color5: #EDDACA;
+    --cat1-color: #490C97;
+    --cat2-color: #0C5497;
+    --cat3-color: #49970C;
+    --cat4-color: #970C0C;
+    --fade-cat-color: #970C0C33;
+    --additional-dark-color: #A5A5A5;
+    --additional-color: #C4C4C4;
+    --black: black;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    overflow: scroll;
+    background-color: var(--additional-dark-color);
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+.update {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color2);
+    border-radius: 12px;
+    margin: 159px 12px;
+}
+
+
+.updatetitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+
+    border-bottom: 1px solid var(--color1);
+}
+
+
+.updateform {
+    padding: 23px 12px;
+    border-bottom: 1px solid var(--color1);
+}
+
+
+
+.updatebutton {
+    display: flex;
+    justify-content: space-between;
+
+    width: 290px;
+    column-gap: 50px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.button {
+    border-radius: 8px;
+    padding: 14px 36px;
+}
+.button_create {
+    border: none;
+    background-color: var(--color1);
+}
+.button_cancel {
+    border: 1px solid var(--color1);
+    background-color: var(--color2);
+}
