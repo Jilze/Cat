@@ -13,7 +13,6 @@
     --additional-color: #C4C4C4;
 }
 
-
 body {
     font-family: 'Roboto', serif;
     background-color: var(--color2);
@@ -22,13 +21,12 @@ body {
 .container {
     max-width: 768px;
     margin: 0 auto;
-
 }
+
 
 /*HEADER*/
 
 .interface {
-
     height: 56px;
     background-color: var(--color1);
     display: flex;
@@ -39,13 +37,11 @@ body {
     box-shadow: 0 4px 4px var(--additional-dark-color);
 }
 
-
 .interface__left {
     display: flex;
     align-items: center;
     margin-left: 16px;
     gap: 15px;
-
 }
 
 .interface__left-title {
@@ -63,12 +59,14 @@ body {
 
 
 .list {
-    width: 45%;
+    height: 80vh;
+    width: 50%;
     margin-top: 24px;
     word-break: break-all;
     margin-left: 13px;
     grid-row-gap: 10px;
     display: grid;
+    grid-template-rows: repeat(4, 24px);
     grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
 }
 
@@ -93,17 +91,17 @@ dt::after {
 
 
 .footer {
+    height: 80px;
+    box-sizing: border-box;
     display: flex;
     border-top: solid 1px var(--color1);
     padding-top: 20px;
-    justify-content: center;
-    gap: 112px;
     position: fixed;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
+    justify-content: space-around;
     background: var(--color2);
-    z-index: -1;
 }
 
 .footer__left {
@@ -129,5 +127,5 @@ dt::after {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    color: black;
+    color: var(--color3);
 }
