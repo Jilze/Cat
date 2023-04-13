@@ -5,14 +5,17 @@
     --color4: #997052;
     --color5: #EDDACA;
     --cat1-color: #490C97;
+    --Poliform-cat: #0C5497;
     --Pulheria-cat: #490C97;
     --cat2-color: #0C5497;
     --cat3-color: #49970C;
     --cat4-color: #970C0C;
-    --Apofem-cat:#970C0C;
+    --Apofem-cat: #970C0C;
     --fade-cat-color: #970C0C33;
     --additional-dark-color: #A5A5A5;
     --additional-color: #C4C4C4;
+    --arrow-green: #49970C;
+    --arrow-red: #970C0C;
 }
 
 body {
@@ -89,6 +92,24 @@ body {
     gap: 24px;
 }
 
+.animal__left-polimorf {
+    width: 60px;
+    height: 60px;
+    --cat-color: var(--Poliform-cat);
+}
+
+.animal__left-pulheria {
+    width: 60px;
+    height: 60px;
+    --cat-color: var(--Pulheria-cat);
+}
+
+.animal__left-apofem {
+    width: 60px;
+    height: 60px;
+    --cat-color: var(--Apofem-cat);
+}
+
 .cat__name {
     color: var(--color3);
     font-size: 24px;
@@ -96,6 +117,12 @@ body {
     font-weight: 400;
 
 }
+
+.animal__right-pen_pen {
+    width: 24px;
+    height: 24px;
+}
+
 
 .cat {
     display: grid;
@@ -106,6 +133,19 @@ body {
 .cat__weight {
     font-size: 16px;
     line-height: 24px;
+}
+
+.cat__arrow {
+    width: 13px;
+    height: 13px;
+  
+}
+
+.cat__arrow_red {
+    width: 13px;
+    height: 13px;
+    transform: rotate(90deg);
+    --arrow-green: var(--arrow-red);
 }
 
 .animal__right {
