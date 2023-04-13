@@ -30,19 +30,24 @@
 
 
     <form class='form'>
+        <div class='form-item'>
+            <input class='form-input' type='text' name='name' placeholder=' ' />
+            <label class='form-label' for='name'>Name</label>
+        </div>
 
-        <input class='form__item'
-               placeholder='Name'
-               type='text'>
 
-        <select class='form__item form__item_species'>
-            <option value='Species' disabled selected>Species</option>
+        <select class='form-input form__item_species '>
+            <option disabled selected>Species</option>
             <option>Fat</option>
             <option>Slender</option>
         </select>
 
-        <input class='form__item form__item_birthday'
-               placeholder='Birthday' type='text'>
+
+        <div class='form-item'>
+            <input class='form-input form__item_birthday' type='text' name='name' id='name' placeholder=' ' />
+            <label class='form-label' for='name'>Birthday</label>
+        </div>
+
     </form>
 
 
@@ -50,5 +55,6 @@
 
 </body>
 </html>
+
 
 
