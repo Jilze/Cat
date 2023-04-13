@@ -12,6 +12,8 @@
     --additional-dark-color: #A5A5A5;
     --additional-color: #C4C4C4;
     --black: black;
+    --arrow-green: #49970C;
+    --arrow-red: #970C0C;
 }
 
 body {
@@ -82,9 +84,21 @@ body {
 }
 
 .card__right-weight {
-    display: flex;
+
     align-items: center;
 
+}
+
+.cat__arrow_red {
+    width: 13px;
+    height: 13px;
+    transform: rotate(90deg);
+    --arrow-green: var(--arrow-red);
+}
+
+.card__left_trash {
+    width: 24px;
+    height: 24px;
 }
 
 .card__left {
